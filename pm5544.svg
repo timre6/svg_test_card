@@ -77,9 +77,6 @@ white grid
     <rect fill="#8069f1" x="273" y="0" width="241" height="1000" />
   </g>
   <g mask="url(#round_mask)">
-    <!-- <rect fill="yellow" x="-514" y="-514" width="1028" height="1028" />
-    <rect fill="red" x="-21" y="-514" width="42" height="1028" /> -->
-
     <rect fill="white" x="-514" y="-189" width="1028" height="1028" />
    
     <rect fill="white" x="-514" y="-514" width="1028" height="1028" />
