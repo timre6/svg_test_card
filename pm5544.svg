@@ -77,12 +77,10 @@ white grid
     <rect fill="#8069f1" x="273" y="0" width="241" height="1000" />
   </g>
   <g mask="url(#round_mask)">
-    <rect fill="white" x="-514" y="-189" width="1028" height="1028" />
-   
     <rect fill="white" x="-514" y="-514" width="1028" height="1028" />
-    <rect fill="black" x="-84" y="-231" width="168" height="1028" />
-    <rect fill="black" x="-514" y="-189" width="1028" height="1028" />
-    <rect fill="white" x="-126" y="-189" width="252" height="1028" />
+    <rect fill="black" x="-84" y="-231" width="168" height="42" />
+    <rect fill="black" x="-326" y="-189" width="200" height="200" />
+    <rect fill="black" x="126" y="-189" width="200" height="200" />
     <rect fill="black" x="-106.69" y="-189" width="3.38" height="1028" />
 
     <rect fill="url(#even_stripes)" x="-514" y="-147" width="1028" height="1028" />
@@ -108,14 +106,13 @@ white grid
     <rect fill="#cccccc" x="84" y="105" width="1028" height="1028" />
     <rect fill="#ffffff" x="168" y="105" width="1028" height="1028" />
 
-    <rect fill="white" x="-514" y="147" width="1028" height="1028" />
-    <rect fill="black" x="-84" y="147" width="168" height="1028" />
-    <rect fill="white" x="-514" y="147" width="1028" height="1028" />
-    <rect fill="black" x="-126" y="147" width="252" height="1028" />
-    <rect fill="white" x="-106.69" y="147" width="3.38" height="1028" />
+    <rect fill="white" x="-326" y="147" width="200" height="100" />
+    <rect fill="black" x="-126" y="147" width="252" height="100" />
+    <rect fill="white" x="126" y="147" width="200" height="100" />
+    <rect fill="white" x="-106.69" y="147" width="3.38" height="100" />
 
     <rect fill="#cccc00" x="-514" y="189" width="1028" height="1028" />
-    <rect fill="#cc0000" x="-20" y="189" width="40" height="1028" />
+    <rect fill="#cc0000" x="-19.3" y="189" width="38.6" height="1028" />
 
     <g mask="url(#cross_mask)">
       <rect fill="url(#vertical_stripes)" x="-514" y="-514" width="1028" height="1028" />
