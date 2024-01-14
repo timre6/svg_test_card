@@ -1,0 +1,129 @@
+<!-- 
+https://en.wikipedia.org/wiki/Philips_circle_pattern
+
+sine wave frequencies (MHz):
+0.8 1.8 2.8 3.8 4.8
+
+white grid
+2 scanline, 230 ns -> 2, 3.38 in pixels
+-->
+
+<svg width="768" height="576" viewBox="-384 -288 768 576" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="checkered" x="-21" y="21" width="84" height="84" patternUnits="userSpaceOnUse">
+      <rect width="90" height="90" fill="white" />
+      <rect x="1.69" y="1" width="38.6" height="40" fill="black" />
+      <rect x="43.69" y="43" width="38.6" height="40" fill="black" />
+    </pattern>
+    <pattern id="grey_squares" x="-21" y="21" width="42" height="42" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="white" />
+      <rect x="1.69" y="1" width="38.6" height="40" fill="#777777" />
+    </pattern>
+    <pattern id="vertical_stripes" x="-21" y="21" width="42" height="420" patternUnits="userSpaceOnUse">
+      <rect width="50" height="500" fill="white" />
+      <rect x="1.69" y="0" width="38.6" height="420" fill="black" />
+    </pattern>
+    <pattern id="even_stripes" x="0" y="0" width="59" height="200" patternUnits="userSpaceOnUse">
+      <rect width="100" height="300" fill="black" />
+      <rect x="29.5" y="0" width="30" height="300" fill="#cccccc" />
+    </pattern>
+    <mask id="side_color_bars_mask">
+      <rect fill="black" x="-500" y="-500" width="1000" height="1000" />
+      <rect fill="white" x="-313.6" y="-230" width="627.2" height="460" />
+      <rect fill="black" x="-232.6" y="-500" width="465.2" height="1000" />
+      <rect fill="black" x="-274.6" y="-148" width="549.2" height="296" />
+    </mask>
+    <mask id="round_mask">
+      <rect fill="black" x="-500" y="-500" width="1000" height="1000" />
+      <circle fill="white" r="252"/>
+    </mask>
+    <mask id="cross_mask">
+      <rect fill="black" x="-500" y="-500" width="1000" height="1000" />
+      <rect fill="white" x="-500" y="-21" width="1000" height="42" />
+      <rect fill="white" x="-19.3" y="-63" width="38.6" height="126" />
+    </mask>
+
+    <linearGradient id="cos" x1="0" x2="50%" y1="0" y2="0" spreadMethod="reflect">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="20%" stop-color="#181818" />
+      <stop offset="80%" stop-color="#e6e6e6" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="wave1" x="-210" y="0" width="18.375" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="18.375" height="200" fill="url(#cos)" />
+    </pattern>
+    <pattern id="wave2" x="-130.6666667" y="0" width="8.166666667" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="8.166666667" height="200" fill="url(#cos)" />
+    </pattern>
+    <pattern id="wave3" x="-46.5" y="0" width="5.25" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="5.25" height="200" fill="url(#cos)" />
+    </pattern>
+    <pattern id="wave4" x="38.68421053" y="0" width="3.868421053" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="3.868421053" height="200" fill="url(#cos)" />
+    </pattern>
+    <pattern id="wave5" x="124.25" y="0" width="3.0625" height="200" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="3.0625" height="200" fill="url(#cos)" />
+    </pattern>
+  </defs>
+
+  <rect fill="url(#checkered)" stroke="none" x="-500" y="-500" width="1000" height="1000" />
+  <rect fill="url(#grey_squares)" stroke="none" x="-357" y="-273" width="714" height="546" />
+  <g mask="url(#side_color_bars_mask)">
+    <rect fill="#587fe6" x="-500" y="-500" width="1000" height="1000" />
+    <rect fill="#a78019" x="-500" y="0" width="1000" height="1000" />
+    <rect fill="#26ad80" x="-514" y="-330" width="241" height="1000" />
+    <rect fill="#d95280" x="-514" y="0" width="241" height="1000" />
+    <rect fill="#80960e" x="273" y="-330" width="241" height="1000" />
+    <rect fill="#8069f1" x="273" y="0" width="241" height="1000" />
+  </g>
+  <g mask="url(#round_mask)">
+    <!-- <rect fill="yellow" x="-514" y="-514" width="1028" height="1028" />
+    <rect fill="red" x="-21" y="-514" width="42" height="1028" /> -->
+
+    <rect fill="white" x="-514" y="-189" width="1028" height="1028" />
+   
+    <rect fill="white" x="-514" y="-514" width="1028" height="1028" />
+    <rect fill="black" x="-84" y="-231" width="168" height="1028" />
+    <rect fill="black" x="-514" y="-189" width="1028" height="1028" />
+    <rect fill="white" x="-126" y="-189" width="252" height="1028" />
+    <rect fill="black" x="-106.69" y="-189" width="3.38" height="1028" />
+
+    <rect fill="url(#even_stripes)" x="-514" y="-147" width="1028" height="1028" />
+
+    <rect fill="#cccc00" x="-514" y="-105" width="1028" height="1028" />
+    <rect fill="#00cccc" x="-168" y="-105" width="1028" height="1028" />
+    <rect fill="#00cc00" x="-84" y="-105" width="1028" height="1028" />
+    <rect fill="#cc00cc" x="0" y="-105" width="1028" height="1028" />
+    <rect fill="#cc0000" x="84" y="-105" width="1028" height="1028" />
+    <rect fill="#0000cc" x="168" y="-105" width="1028" height="1028" />
+
+    <rect fill="#0" x="-514" y="0" width="1028" height="1028" />
+
+    <rect fill="url(#wave1)" x="-210" y="0" width="106" height="105" />
+    <rect fill="url(#wave2)" x="-126" y="0" width="106" height="106" />
+    <rect fill="url(#wave3)" x="-42" y="0" width="106" height="106" />
+    <rect fill="url(#wave4)" x="42" y="0" width="106" height="106" />
+    <rect fill="url(#wave5)" x="126" y="0" width="84" height="106" />
+
+    <rect fill="#343434" x="-168" y="105" width="1028" height="1028" />
+    <rect fill="#666666" x="-84" y="105" width="1028" height="1028" />
+    <rect fill="#999999" x="0" y="105" width="1028" height="1028" />
+    <rect fill="#cccccc" x="84" y="105" width="1028" height="1028" />
+    <rect fill="#ffffff" x="168" y="105" width="1028" height="1028" />
+
+    <rect fill="white" x="-514" y="147" width="1028" height="1028" />
+    <rect fill="black" x="-84" y="147" width="168" height="1028" />
+    <rect fill="white" x="-514" y="147" width="1028" height="1028" />
+    <rect fill="black" x="-126" y="147" width="252" height="1028" />
+    <rect fill="white" x="-106.69" y="147" width="3.38" height="1028" />
+
+    <rect fill="#cccc00" x="-514" y="189" width="1028" height="1028" />
+    <rect fill="#cc0000" x="-20" y="189" width="40" height="1028" />
+
+    <g mask="url(#cross_mask)">
+      <rect fill="url(#vertical_stripes)" x="-514" y="-514" width="1028" height="1028" />
+      <rect fill="white" x="-514" y="-1" width="1028" height="2" />
+      <rect fill="white" x="-1.69" y="-100" width="3.38" height="200" />
+    </g>
+  </g>
+</svg>
