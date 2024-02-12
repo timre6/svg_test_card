@@ -5,23 +5,25 @@ sine wave frequencies (MHz):
 0.8 1.8 2.8 3.8 4.8
 
 white grid
-2 scanline, 230 ns -> 2, 3.38 in pixels
+2 scanline, 230 ns -> 2, 3.38 in pixels (~3.4)
+half
+1 scanline, 115 ns -> 1, 1.69 in pixels (~1.7)
 -->
 
 <svg width="768" height="576" viewBox="-384 -288 768 576" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <pattern id="checkered" x="-21" y="21" width="84" height="84" patternUnits="userSpaceOnUse">
       <rect width="90" height="90" fill="white" />
-      <rect x="1.69" y="1" width="38.6" height="40" fill="black" />
-      <rect x="43.69" y="43" width="38.6" height="40" fill="black" />
+      <rect x="1.69" y="1" width="38.62" height="40" fill="black" />
+      <rect x="43.69" y="43" width="38.62" height="40" fill="black" />
     </pattern>
     <pattern id="grey_squares" x="-21" y="21" width="42" height="42" patternUnits="userSpaceOnUse">
       <rect width="50" height="50" fill="white" />
-      <rect x="1.69" y="1" width="38.6" height="40" fill="#777777" />
+      <rect x="1.69" y="1" width="38.62" height="40" fill="#777777" />
     </pattern>
     <pattern id="vertical_stripes" x="-21" y="21" width="42" height="420" patternUnits="userSpaceOnUse">
       <rect width="50" height="500" fill="white" />
-      <rect x="1.69" y="0" width="38.6" height="420" fill="black" />
+      <rect x="1.69" y="0" width="38.62" height="420" fill="black" />
     </pattern>
     <pattern id="even_stripes" x="0" y="0" width="59" height="200" patternUnits="userSpaceOnUse">
       <rect width="100" height="300" fill="black" />
@@ -29,9 +31,9 @@ white grid
     </pattern>
     <mask id="side_color_bars_mask">
       <rect fill="black" x="-500" y="-500" width="1000" height="1000" />
-      <rect fill="white" x="-313.6" y="-230" width="627.2" height="460" />
-      <rect fill="black" x="-232.6" y="-500" width="465.2" height="1000" />
-      <rect fill="black" x="-274.6" y="-148" width="549.2" height="296" />
+      <rect fill="white" x="-313.7" y="-230.1" width="627.4" height="460.2" />
+      <rect fill="black" x="-232.7" y="-500" width="465.4" height="1000" />
+      <rect fill="black" x="-274.7" y="-148.1" width="549.4" height="296.2" />
     </mask>
     <mask id="round_mask">
       <rect fill="black" x="-500" y="-500" width="1000" height="1000" />
@@ -83,7 +85,7 @@ white grid
     <rect fill="black" x="126" y="-189" width="200" height="200" />
     <rect fill="black" x="-106.69" y="-189" width="3.38" height="1028" />
 
-    <rect fill="url(#even_stripes)" x="-514" y="-147" width="1028" height="1028" />
+    <rect fill="url(#even_stripes)" x="-514" y="-147" width="1028" height="50" />
 
     <rect fill="#cccc00" x="-514" y="-105" width="1028" height="1028" />
     <rect fill="#00cccc" x="-168" y="-105" width="1028" height="1028" />
@@ -112,7 +114,7 @@ white grid
     <rect fill="white" x="-106.69" y="147" width="3.38" height="100" />
 
     <rect fill="#cccc00" x="-514" y="189" width="1028" height="1028" />
-    <rect fill="#cc0000" x="-19.3" y="189" width="38.6" height="1028" />
+    <rect fill="#cc0000" x="-21" y="189" width="42" height="1028" />
 
     <g mask="url(#cross_mask)">
       <rect fill="url(#vertical_stripes)" x="-514" y="-514" width="1028" height="1028" />
